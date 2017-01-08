@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/ic_lock_idle_lock" />
+
+    <EditText
+        android:id="@+id/eTLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile no"
+        android:inputType="phone"> <requestFocus /></EditText>
+    <EditText
+        android:id="@+id/eTPassword"
+        android:hint="Enter Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/login_btn_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSignIn"
+            android:text="Sign In" />
+
+        <Button
+            android:id="@+id/login_btn_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSignUp"
+            android:text="Sign Up" />
+    </LinearLayout>
+
+</LinearLayout>
